@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PermitPulse · Find the Right Window for Offshore Work | Qinren Shi</title>
+    <meta name="description" content="A prototype that combines marine permit conditions with ocean and weather data to assess candidate work windows for offshore operations." />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/QINREN.jpg"
+              alt="Qinren Shi"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Qinren Shi</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="project-cs-hero">
+        <div class="project-cs-hero__content">
+          <a class="portfolio-detail__back" href="./index.html#projects">← Back to projects</a>
+          <p class="portfolio-detail__meta"><time datetime="2026-10">Oct 2026</time> · Copernicus Marine Hackathon</p>
+          <h1 class="heading-primary-project">PermitPulse · Find the Right Window for Offshore Work</h1>
+          <div class="project-cs-hero__info">
+            <p class="text-primary">A prototype that combines marine permit conditions with ocean and weather data to assess candidate work windows for offshore operations.</p>
+          </div>
+          <div class="project-cs-hero__cta">
+            <a href="https://github.com/shlerylan/permitpulse-hackathon" class="btn btn--bg" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-details sec-pad">
+        <div class="main-container">
+          <div class="project-details__content-main">
+            <section>
+              <h2 class="project-details__content-title">Background</h2>
+              <p class="project-details__desc-para">Our team developed PermitPulse for the Copernicus Marine Hackathon. The prototype brings marine permit conditions and ocean and weather evidence into one workflow so reviewers can assess candidate time windows for offshore work.</p>
+            </section>
+
+            <section>
+              <h2 class="project-details__content-title">Team</h2>
+              <p class="project-details__desc-para">I worked with Aras Mosafaei and Ann Kristin Gans on Team 11.</p>
+            </section>
+
+            <section>
+              <h2 class="project-details__content-title">My contribution</h2>
+              <p class="project-details__desc-para">I implemented source checks that compare AI-extracted quotes with the original PDF and retain source evidence for review. I wrote regression tests for ambiguous and unmatched citations and built a FastAPI and React review step that requires reviewers to confirm permit interpretations and applicability before assessing work windows.</p>
+            </section>
+
+            <section>
+              <h2 class="project-details__content-title">Outcome</h2>
+              <p class="project-details__desc-para">The prototype presents marine and weather evidence on a map and evaluates it against reviewed permit conditions. Reviewers can inspect the evidence behind candidate work windows and see where required data are missing.</p>
+            </section>
+
+            <section class="portfolio-gallery" aria-labelledby="permitpulse-demo">
+              <h2 class="project-details__content-title" id="permitpulse-demo">Project Demo</h2>
+              <figure class="portfolio-gallery__figure">
+                <a href="./assets/png/permitpulse-environmental-evidence.png" target="_blank" rel="noopener" aria-label="Open the full-size environmental evidence map">
+                  <img src="./assets/png/permitpulse-environmental-evidence.png" width="2880" height="1120" loading="lazy" alt="The environmental evidence map distinguishes the work location from the provider’s sample point and displays a significant wave height of 1.01 metres." />
+                </a>
+                <figcaption><strong>Environmental evidence map.</strong> Reviewers can check the source location, time, and value of each environmental variable.</figcaption>
+              </figure>
+              <figure class="portfolio-gallery__figure portfolio-gallery__figure--portrait">
+                <a href="./assets/png/permitpulse-work-windows.png" target="_blank" rel="noopener" aria-label="Open the full-size work-window assessment screenshot">
+                  <img src="./assets/png/permitpulse-work-windows.png" width="1794" height="2804" loading="lazy" alt="A 48-hour assessment timeline showing work, stop, and unknown intervals, with two candidate continuous work windows." />
+                </a>
+                <figcaption><strong>Work-window assessment.</strong> The demo highlights candidate windows and shows where limits are triggered or evidence is missing.</figcaption>
+              </figure>
+            </section>
+
+            <section class="project-details__tools-used">
+              <h2 class="project-details__content-title">Tools Used</h2>
+              <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">FastAPI</div>
+                <div class="skills__skill">React</div>
+                <div class="skills__skill">Regression testing</div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Qinren Shi</h4>
+            <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

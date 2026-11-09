@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hourly Traffic CO2 Maps for 20 European Cities | Qinren Shi</title>
+    <meta name="description" content="High spatiotemporal resolution traffic CO<sub>2</sub> emission maps" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/QINREN.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Qinren Shi</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <a class="portfolio-detail__back" href="./index.html#projects">← Back to projects</a>
+        <p class="portfolio-detail__meta"><time datetime="2026-02">Feb 2026</time> · Earth System Science Data</p>
+        <h1 class="heading-primary-project">High spatiotemporal resolution traffic CO<sub>2</sub> emission maps derived from Floating Car Data (FCD) for 20 European cities (2023)</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            We developed new hourly CO<sub>2</sub> emission maps at 100 × 100 m resolution for 20 major cities in France, Germany, and the Netherlands in 2023.
+          </p>
+          <p class="text-primary-cities">
+            Amsterdam, Berlin, Bordeaux, Cologne, Dusseldorf, Frankfurt, Hamburg, Lille, Lyon, Marseille, Montpellier, Munich, Nantes, Nice, Paris, Rotterdam, Strasbourg, Stuttgart, The Hague, Toulouse
+          </p>
+          </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://essd.copernicus.org/preprints/essd-2025-458/" class="btn btn--bg" target="_blank">Read our preprint</a>
+          <a href="https://doi.org/10.5281/zenodo.16600210" class="btn btn--bg" target="_blank">Download data</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="project-details">
+      <div class="hero">
+        <!-- A quick glance -->
+        <div class="scroll-indicator"></div>
+      </div>
+      <div class="main-container">
+        <div class="project-details__content">
+          </div>
+          <div class="project-details__content-main">
+
+            <!-- <div class="project-details__links">
+              <h3 class="project-details__content-title">Read our preprint on ESSDD / Download our data</h3>
+              <a
+                href="https://essd.copernicus.org/preprints/essd-2025-458/"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Preprint</a
+              >
+              <a
+                href="https://doi.org/10.5281/zenodo.16600210"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Database</a
+              >
+            </div> -->
+
+              <div class="project-details__desc"></div>
+              <h3 class="project-details__content-title">Background</h3>
+              <p class="project-details__desc-para">
+                On-road transportation is a major contributor to CO<sub>2</sub> emissions in cities, and high-resolution CO<sub>2</sub> traffic emission maps are essential for analyzing emission patterns and characteristics. 
+              </p>
+              <h3 class="project-details__content-title">Method</h3>
+              <p class="project-details__desc-para">
+                We used commercial Floating Car Data (FCD) based on anonymized GPS signals periodically reported by individual vehicles, providing hourly information on mean speed and on the number of GPS sample counts per street. 
+                Machine learning models were developed to fill FCD data gaps and convert sample counts into actual traffic volumes, and the COPERT model was used to estimate speed- and vehicle type dependent emission factors. Hourly emissions, initially estimated at the street level, were aggregated to 100 × 100 m grid cells. Our approach enhances the spatial and temporal characterization of CO<sub>2</sub> emissions in on-road transportation compared to the conventional method used in gridded inventories, indicating the potential of FCD data for near-real-time urban emission monitoring and timely policy making. 
+              </p>
+
+             <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/png/ESSD_method.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />        
+              <p class="img-caption">Fig 1. Roadmap of this study</p>
+            </div> 
+
+              <h3 class="project-details__content-title">Wrap-Up</h3>
+              <p class="project-details__desc-para">
+                Annual on-road CO<sub>2</sub> emissions across the 20 European cities in 2023 ranged from 0.4 to 7.6 Mt CO<sub>2</sub>, with emissions strongly correlated with urban area (R² = 0.97) and, to a lesser extent, population size (R² = 0.72). Spatially, emissions are either highly concentrated along major highways in cities such as Paris and Amsterdam or more evenly distributed in cities such as Berlin and Bordeaux, highlighting the need for context-specific mitigation strategies. Temporally, this study shows the CO<sub>2</sub> emission fluctuations due to holiday periods, weekly activity cycles, and distinct usage profiles of different vehicle types. Due to the low latency of FCD, this approach could support near-real-time traffic emission mapping in the future. 
+              </p>
+            
+             <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/png/FIG2_ANNUAL_MAP.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />        
+              <p class="img-caption">Fig 2. Annual CO<sub>2</sub> emission map of 20 cities at 100m × 100m resolution in 2023. </p>
+
+            </div> 
+                         <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/png/Picture3_DAILY.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />        
+              <p class="img-caption">Fig 3. Normalized daily CO<sub>2</sub> emission of seven cities in 2023. Y-axis represents each day's CO<sub>2</sub> emissions divided by the city's total emissions in 2023. The light blue and grey shades represent school holidays and public holidays, respectively. The y-axis represents each day's CO<sub>2</sub> emissions divided by the city's total emissions in 2023.</p>
+            </div>            
+          
+          
+          
+          
+          
+    
+            
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">Python(Machine learning)</div>
+                <div class="skills__skill">COPERT</div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Qinren Shi</h4>
+            <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

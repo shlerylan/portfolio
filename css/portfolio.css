@@ -150,6 +150,10 @@
   outline-offset: 2px;
 }
 
+.consulting-project {
+  margin-top: 1.6rem;
+}
+
 .project-cs-hero__content {
   display: flex;
   flex-direction: column;
